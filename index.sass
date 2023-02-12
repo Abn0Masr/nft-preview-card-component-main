@@ -1,0 +1,105 @@
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+main
+    background: hsl(217, 54%, 11%)
+    width: 100%
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    .card
+        width: 9.4cm
+        height: 15.5cm
+        background: hsl(216, 50%, 16%)
+        border-radius: 15px
+        justify-content: center
+        padding: 1.5rem
+        .image
+            position: relative
+            display: flex
+            height: 8.1cm
+            width: 8.1cm
+            border-radius: 10px
+            overflow: hidden
+            cursor: pointer
+            img
+                position: absolute
+                height: 100%
+                width: 100%
+            .layout
+                position: absolute
+                height: 8.1cm
+                width: 8.1cm
+                top: 0
+                left: 0
+                visibility: hidden
+                .color
+                    height: 8.1cm
+                    width: 8.1cm
+                    background: hsl(178, 100%, 50%)
+                    opacity: 60%
+                svg
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%,-50%)
+        .image:hover .layout
+            visibility: visible
+        h1
+            cursor: pointer
+            margin: 1rem 0
+            font-size: 1.5em
+            color: hsl(0, 0%, 100%)
+            font-family: 'Outfit', sans-serif
+        h1:hover
+            color: hsl(178, 100%, 50%)
+        p
+            margin: 1rem 0
+            font-family: 'Outfit', sans-serif
+            color: hsl(215, 51%, 70%)
+            font-weight: 300
+            line-height: 25px
+            font-size: 1.1em
+        .info
+            display: flex
+            justify-content: space-between
+            align-items: center
+            text-align: center
+            padding: .5rem 0
+            .info-rs
+                display: flex
+                justify-content: center
+                align-items: center
+                gap: 5px
+                font-family: 'Outfit', sans-serif
+                color: hsl(178, 100%, 50%)
+                font-weight: 400
+            .info-ls
+                display: flex
+                justify-content: center
+                align-items: center
+                gap: 5px
+                font-family: 'Outfit', sans-serif
+                color: hsl(215, 51%, 70%)
+        .footer
+            border-top: 1px solid hsl(215, 32%, 27%)
+            padding: 1rem 0
+            display: flex
+            align-items: center
+            gap: 1rem
+            font-family: 'Outfit', sans-serif
+            color: hsl(215, 51%, 70%)
+            a
+                text-decoration: none
+                font-family: 'Outfit', sans-serif
+                color: hsl(0, 0%, 100%)
+            a:hover
+                color: hsl(178, 100%, 50%)
+.avtar
+    width: 30px
+    height: 30px
+    object-fit: cover
+    border-radius: 50%
+    outline: 1px solid white
